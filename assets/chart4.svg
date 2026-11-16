@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" role="img" aria-label="Netzwelt ad revenue case study callout"><rect x="0" y="0" width="900" height="360" fill="#f3f1ea"/><g transform="translate(48,56)">
+ <g font-size="13" fill="#52585e" letter-spacing="0.5">
+  <text x="0" y="18">CASE STUDY</text>
+ </g>
+ <g>
+  <text x="0" y="130" font-size="96" font-weight="700" fill="#1f6f4e">+18%</text>
+ </g>
+ <g font-size="22" fill="#1a1d1f" font-weight="600">
+  <text x="0" y="168">ad revenue</text>
+ </g>
+ <g font-size="15" fill="#52585e">
+  <text x="0" y="200">Netzwelt, after passing Core Web Vitals thresholds</text>
+  <text x="0" y="228">One of several publishers in our review that saw real gains post-launch.</text>
+  <text x="0" y="256">We are not claiming this result for Pathfinder yet — the pattern is the case for testing it.</text>
+ </g>
+ </g></svg>

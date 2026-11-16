@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pathfinder by the Numbers</title>
+<meta name="description" content="A case for testing Pathfinder, our Core Web Vitals rebuild: the baseline, the build, and the industry pattern behind it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">Pod Iota &middot; Pathfinder</span>
+    <h1>Pathfinder by the Numbers</h1>
+    <p class="subtitle">We're not claiming the win yet. Here's the baseline, the build, and the industry pattern the case rests on.</p>
+  </div>
+</header>
+
+<section id="problem">
+  <div class="wrap">
+    <h2>The problem</h2>
+    <p>Slow pages cost publishers in three places at once: ad revenue, search discoverability, and the Core Web Vitals (Google's page-speed quality signals) that increasingly influence both. These aren't independent problems &mdash; they share a root cause, which is why a single rebuild can move all three.</p>
+    <figure>
+      <img src="assets/chart5.png" alt="Cost of slow: roughly 1 in 4 article views land past the 3-second mark">
+      <figcaption>Sources: Amplitude (internal analytics, trailing 30 days) and <a href="https://www.thinkwithgoogle.com/_qs/documents/57/mobile-page-speed-new-industry-benchmarks.pdf" target="_blank" rel="noopener">Think with Google</a> (Mobile Page Speed, New Industry Benchmarks).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="baseline">
+  <div class="wrap">
+    <h2>The baseline</h2>
+    <p>Baseline Core Web Vitals, pulled from our internal performance analytics: LCP (Largest Contentful Paint), INP (Interaction to Next Paint), FCP (First Contentful Paint), TTFB (Time to First Byte), and CLS (Cumulative Layout Shift) &mdash; each measured against Google's published thresholds. Several of our production metrics sit in the "Needs improvement" range today, which is exactly why Pathfinder targets this layer first.</p>
+    <figure>
+      <img src="assets/chart1.png" alt="Baseline Core Web Vitals: LCP, INP, FCP, TTFB, and CLS measured against Google's thresholds">
+      <figcaption>Sources: Amplitude (internal analytics, Performance Marks chart, 4-week trend) and <a href="https://web.dev/articles/defining-core-web-vitals-thresholds" target="_blank" rel="noopener">web.dev Core Web Vitals</a> (Google's published thresholds for page-speed quality).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="what-we-built">
+  <div class="wrap">
+    <h2>What we built</h2>
+    <p>Pathfinder is Pod Iota's rebuild on our ad decisioning platform: a faster ad delivery and templating layer designed to cut script weight, reduce layout shift, and improve discoverability, without giving up ad revenue. The build is roughly 90% complete.</p>
+  </div>
+</section>
+
+<section id="evidence">
+  <div class="wrap">
+    <h2>The evidence we have today</h2>
+    <p>We measured a live staging simulation against production using the browser's own Performance API: navigation timing, paint timing, and resource timing. In that lab snapshot, First Contentful Paint came in faster on the staging build. This is a single lab snapshot, not a field dataset drawn from real visitors. It shows direction, not proof.</p>
+    <figure>
+      <img src="assets/chart2.png" alt="Load time comparison: production cold load, production warm cache, and Pathfinder staging build">
+      <figcaption>Page weight: the Pathfinder staging build loads about 81 KB (kilobytes). The current production homepage loads about 871 KB &mdash; roughly 11x heavier.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="how-close">
+  <div class="wrap">
+    <h2>How close we are</h2>
+    <p>Validation is roughly 90% complete against our readiness checklist: 2 of 5 items done, 2 in progress, and 1 blocked. We're not waiting on belief, we're waiting on the remaining checks.</p>
+    <ul class="checklist">
+      <li class="done">robots.txt architecture <span class="status">shipped</span></li>
+      <li class="done">Third-Party Script Governance process <span class="status">drafted, out for SEO sign-off</span></li>
+      <li class="pending">~103-row SEO validation checklist <span class="status">in progress</span></li>
+      <li class="pending">Ad-tag review <span class="status">in progress</span></li>
+      <li class="blocked">QA (Quality Assurance) environment <span class="status">currently down, blocking final sign-off</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="payoff">
+  <div class="wrap">
+    <h2>The case for the payoff</h2>
+    <p>Publishers who have made comparable ad-tech and speed investments have seen real gains, from case studies at Netzwelt, Economic Times, NDTV, iCook, and Vodafone to Google's own research linking page speed to revenue. The pattern points one direction. We're not claiming those exact numbers for Pathfinder yet, but the direction is why this investment makes sense.</p>
+    <figure>
+      <img src="assets/chart3.png" alt="Industry case studies: percent change in key metrics after passing Core Web Vitals thresholds">
+      <figcaption>Sources: web.dev case studies for <a href="https://web.dev/case-studies/netzwelt" target="_blank" rel="noopener">Netzwelt</a> (ad revenue), <a href="https://web.dev/case-studies/economic-times-cwv" target="_blank" rel="noopener">Economic Times</a> (bounce rate), <a href="https://web.dev/case-studies/ndtv" target="_blank" rel="noopener">NDTV</a> (bounce rate), and <a href="https://web.dev/case-studies/vodafone" target="_blank" rel="noopener">Vodafone Italy</a> (sales); abandonment stat from <a href="https://www.thinkwithgoogle.com/_qs/documents/57/mobile-page-speed-new-industry-benchmarks.pdf" target="_blank" rel="noopener">Think with Google</a>. iCook's figure is widely cited in industry roundups, but we could not confirm its original case study.</figcaption>
+    </figure>
+    <div class="callout">
+      <div class="eyebrow">Case study</div>
+      <p style="font-size:2.2rem; font-weight:700; color:var(--good); margin:0 0 6px; font-family:Georgia,serif;">+18%</p>
+      <p style="font-weight:600; color:var(--ink); margin:0 0 10px;">ad revenue</p>
+      <p style="margin-bottom:6px;">Netzwelt, after passing Core Web Vitals thresholds.</p>
+      <p style="margin-bottom:6px;">One of several publishers in our review that saw real gains post-launch.</p>
+      <p style="margin-bottom:0;">We are not claiming this result for Pathfinder yet &mdash; the pattern is the case for testing it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="not-claiming">
+  <div class="wrap">
+    <h2>What we're not claiming</h2>
+    <div class="not-claiming">
+      <p style="margin-bottom:0;">We are not claiming Pathfinder has launched, and we are not claiming production before-and-after numbers yet. What we have is a measured production baseline, a build that's about 90% done, a real lab comparison between staging and production, and a documented pattern from publishers who've made similar bets.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="closer">
+  <div class="wrap">
+    <p class="ask">Testing is underway. The numbers are in. Just say when.</p>
+    <p>Built by Pod Iota for Pathfinder.</p>
+  </div>
+</footer>
+
+</body>
+</html>

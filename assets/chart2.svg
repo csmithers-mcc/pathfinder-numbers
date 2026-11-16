@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" width="100%" role="img" aria-label="First Contentful Paint comparison chart"><rect x="0" y="0" width="860" height="260" fill="#f3f1ea"/><g transform="translate(20,20)">
+ <g font-size="11" fill="#52585e">
+ <text x="150" y="16">0ms</text>
+ <text x="760" y="16">4500ms</text>
+ </g>
+ <!-- scale 0-4500ms over 600px starting x=150 -->
+ <g transform="translate(0,35)">
+ <text x="0" y="16" font-size="13" fill="#1a1d1f" font-weight="600">kansas.com</text>
+ <text x="0" y="34" font-size="10.5" fill="#52585e">cold load</text>
+ <rect x="150" y="2" width="600" height="22" fill="#d8d3c4"/>
+ <rect x="150" y="2" width="579" height="22" fill="#b0392a"/>
+ <text x="737" y="18" font-size="12" fill="#f3f1ea" font-weight="700" text-anchor="end">4,348ms</text>
+ </g>
+ <g transform="translate(0,90)">
+ <text x="0" y="16" font-size="13" fill="#1a1d1f" font-weight="600">kansas.com</text>
+ <text x="0" y="34" font-size="10.5" fill="#52585e">warm cache</text>
+ <rect x="150" y="2" width="600" height="22" fill="#d8d3c4"/>
+ <rect x="150" y="2" width="41" height="22" fill="#b4791c"/>
+ <text x="196" y="18" font-size="12" fill="#1a1d1f" font-weight="700">308ms</text>
+ </g>
+ <g transform="translate(0,145)">
+ <text x="0" y="16" font-size="10" fill="#1a1d1f" font-weight="600">Pathfinder (staging)</text>
+ <text x="0" y="34" font-size="10.5" fill="#52585e">run 1 / run 2</text>
+ <rect x="150" y="2" width="600" height="22" fill="#d8d3c4"/>
+ <rect x="150" y="2" width="158" height="22" fill="#1f6f4e"/>
+ <text x="312" y="18" font-size="12" fill="#1a1d1f" font-weight="700">1,188ms → 1,248ms</text>
+ </g>
+ </g></svg>

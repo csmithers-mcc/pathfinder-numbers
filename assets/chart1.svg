@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%" role="img" aria-label="Core Web Vitals baseline chart"><rect x="0" y="0" width="900" height="340" fill="#f3f1ea"/><g transform="translate(20,20)">
+ <!-- scale: 0-4200ms mapped to bar width, except CLS which is unitless 0-0.3 -->
+ <!-- gridline labels -->
+ <g font-size="11" fill="#52585e">
+ <text x="340" y="16">0ms</text>
+ <text x="620" y="16">2500ms (LCP good cutoff)</text>
+ </g>
+ <!-- bars: label, value, max, good-cutoff -->
+ <!-- LCP -->
+ <g transform="translate(0,30)">
+ <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">LCP</text>
+ <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
+ <rect x="90" y="2" width="369" height="20" fill="#b4791c"/>
+ <line x1="459" y1="-4" x2="459" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
+ <text x="90" y="40" font-size="11" fill="#52585e">2,628ms avg</text>
+ <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600" textLength="112" lengthAdjust="spacingAndGlyphs">Needs improvement</text>
+ </g>
+ <!-- INP -->
+ <g transform="translate(0,85)">
+ <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">INP</text>
+ <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
+ <rect x="90" y="2" width="204" height="20" fill="#b4791c"/>
+ <line x1="214" y1="-4" x2="214" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
+ <text x="90" y="40" font-size="11" fill="#52585e">329ms avg</text>
+ <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600" textLength="112" lengthAdjust="spacingAndGlyphs">Needs improvement</text>
+ </g>
+ <!-- FCP -->
+ <g transform="translate(0,140)">
+ <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">FCP</text>
+ <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
+ <rect x="90" y="2" width="306" height="20" fill="#b4791c"/>
+ <line x1="356" y1="-4" x2="356" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
+ <text x="90" y="40" font-size="11" fill="#52585e">2,072ms avg</text>
+ <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600" textLength="112" lengthAdjust="spacingAndGlyphs">Needs improvement</text>
+ </g>
+ <!-- TTFB -->
+ <g transform="translate(0,195)">
+ <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">TTFB</text>
+ <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
+ <rect x="90" y="2" width="149" height="20" fill="#b4791c"/>
+ <line x1="149" y1="-4" x2="149" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
+ <text x="90" y="40" font-size="11" fill="#52585e">1,010ms avg</text>
+ <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600" textLength="112" lengthAdjust="spacingAndGlyphs">Needs improvement</text>
+ </g>
+ <!-- CLS -->
+ <g transform="translate(0,250)">
+ <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">CLS</text>
+ <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
+ <rect x="90" y="2" width="200" height="20" fill="#1f6f4e"/>
+ <line x1="207" y1="-4" x2="207" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
+ <text x="90" y="40" font-size="11" fill="#52585e">0.097 avg (scale 0-0.3)</text>
+ <text x="700" y="16" font-size="12" fill="#1f6f4e" font-weight="600">Good</text>
+ </g>
+ </g></svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 316" width="100%" role="img" aria-label="Industry Core Web Vitals case studies"><rect x="0" y="0" width="860" height="316" fill="#f3f1ea"/><g transform="translate(20,36)">
+ <g font-size="12" fill="#52585e"><text x="400" y="16">% change after passing Core Web Vitals</text></g>
+ <!-- bars scaled -45..+20 mapped over width, baseline at x=410 -->
+ <g font-size="12">
+ <!-- Netzwelt ad revenue +18% -->
+ <g transform="translate(0,30)">
+ <text x="0" y="14" fill="#1a1d1f">Netzwelt - ad revenue</text>
+ <rect x="410" y="0" width="126" height="18" fill="#1f6f4e"/>
+ <text x="544" y="14" fill="#1a1d1f" font-weight="700">+18%</text>
+ </g>
+ <!-- Economic Times bounce -43% -->
+ <g transform="translate(0,58)">
+ <text x="420" y="14" fill="#1a1d1f">Economic Times - bounce rate</text>
+ <rect x="108" y="0" width="302" height="18" fill="#c4471c"/>
+ <text x="98" y="14" fill="#1a1d1f" font-weight="700" text-anchor="end">-43%</text>
+ </g>
+ <!-- NDTV bounce -50% -->
+ <g transform="translate(0,86)">
+ <text x="420" y="14" fill="#1a1d1f">NDTV - bounce rate</text>
+ <rect x="58" y="0" width="352" height="18" fill="#c4471c"/>
+ <text x="48" y="14" fill="#1a1d1f" font-weight="700" text-anchor="end">-50%</text>
+ </g>
+ <!-- iCook ad revenue +10 -->
+ <g transform="translate(0,114)">
+ <text x="0" y="14" fill="#1a1d1f">iCook - ad revenue</text>
+ <rect x="410" y="0" width="70" height="18" fill="#1f6f4e"/>
+ <text x="488" y="14" fill="#1a1d1f" font-weight="700">+10%</text>
+ </g>
+ <!-- Vodafone sales +8 -->
+ <g transform="translate(0,142)">
+ <text x="0" y="14" fill="#1a1d1f">Vodafone IT - sales</text>
+ <rect x="410" y="0" width="56" height="18" fill="#1f6f4e"/>
+ <text x="474" y="14" fill="#1a1d1f" font-weight="700">+8%</text>
+ </g>
+ <!-- Google general abandonment -24 -->
+ <g transform="translate(0,170)">
+ <text x="420" y="14" fill="#1a1d1f">Google study - abandonment</text>
+ <rect x="242" y="0" width="168" height="18" fill="#c4471c"/>
+ <text x="232" y="14" fill="#1a1d1f" font-weight="700" text-anchor="end">-24%+</text>
+ </g>
+ </g>
+ <line x1="410" y1="20" x2="410" y2="196" stroke="#1a1d1f" stroke-width="1"/>
+ </g></svg>
