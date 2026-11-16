@@ -1,0 +1,7 @@
+{
+  "share_percent_rounded": 24,
+  "ratio_label": "~1 in 4",
+  "threshold_ms": 3000,
+  "lookback_days": 30,
+  "as_of": "2026-11-16"
+}

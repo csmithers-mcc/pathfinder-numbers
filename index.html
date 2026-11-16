@@ -5,9 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pathfinder by the Numbers</title>
 <meta name="description" content="A case for testing Pathfinder, our Core Web Vitals rebuild: the baseline, the build, and the industry pattern behind it.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pathfinder by the Numbers">
+<meta property="og:description" content="A case for testing Pathfinder, our Core Web Vitals rebuild: the baseline, the build, and the industry pattern behind it.">
+<meta property="og:image" content="assets/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pathfinder by the Numbers">
+<meta name="twitter:description" content="A case for testing Pathfinder, our Core Web Vitals rebuild: the baseline, the build, and the industry pattern behind it.">
+<meta name="twitter:image" content="assets/social-preview.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<nav class="sitenav" aria-label="Section navigation">
+  <div class="wrap">
+    <a href="#problem">Problem</a>
+    <a href="#baseline">Baseline</a>
+    <a href="#what-we-built">Build</a>
+    <a href="#evidence">Evidence</a>
+    <a href="#how-close">Readiness</a>
+    <a href="#payoff">Payoff</a>
+  </div>
+</nav>
 
 <header class="hero">
   <div class="wrap">
@@ -17,47 +36,48 @@
   </div>
 </header>
 
-<section id="problem">
+<section id="problem" class="reveal">
   <div class="wrap">
     <h2>The problem</h2>
     <p>Slow pages cost publishers in three places at once: ad revenue, search discoverability, and the Core Web Vitals (Google's page-speed quality signals) that increasingly influence both. These aren't independent problems &mdash; they share a root cause, which is why a single rebuild can move all three.</p>
     <figure>
       <img src="assets/chart5.png" alt="Cost of slow: roughly 1 in 4 article views land past the 3-second mark">
-      <figcaption>Sources: Amplitude (internal analytics, trailing 30 days) and <a href="https://www.thinkwithgoogle.com/_qs/documents/57/mobile-page-speed-new-industry-benchmarks.pdf" target="_blank" rel="noopener">Think with Google</a> (Mobile Page Speed, New Industry Benchmarks).</figcaption>
+      <figcaption>Sources: Amplitude (internal analytics) and <a href="https://www.thinkwithgoogle.com/_qs/documents/57/mobile-page-speed-new-industry-benchmarks.pdf" target="_blank" rel="noopener">Think with Google</a> (Mobile Page Speed, New Industry Benchmarks). This chart refreshes daily from live data &mdash; see the date baked into the image.</figcaption>
     </figure>
   </div>
 </section>
 
-<section id="baseline">
+<section id="baseline" class="reveal">
   <div class="wrap">
     <h2>The baseline</h2>
     <p>Baseline Core Web Vitals, pulled from our internal performance analytics: LCP (Largest Contentful Paint), INP (Interaction to Next Paint), FCP (First Contentful Paint), TTFB (Time to First Byte), and CLS (Cumulative Layout Shift) &mdash; each measured against Google's published thresholds. Several of our production metrics sit in the "Needs improvement" range today, which is exactly why Pathfinder targets this layer first.</p>
     <figure>
       <img src="assets/chart1.png" alt="Baseline Core Web Vitals: LCP, INP, FCP, TTFB, and CLS measured against Google's thresholds">
-      <figcaption>Sources: Amplitude (internal analytics, Performance Marks chart, 4-week trend) and <a href="https://web.dev/articles/defining-core-web-vitals-thresholds" target="_blank" rel="noopener">web.dev Core Web Vitals</a> (Google's published thresholds for page-speed quality).</figcaption>
+      <figcaption>Sources: Amplitude (internal analytics, Performance Marks chart) and <a href="https://web.dev/articles/defining-core-web-vitals-thresholds" target="_blank" rel="noopener">web.dev Core Web Vitals</a> (Google's published thresholds for page-speed quality). This chart refreshes daily from live data.</figcaption>
     </figure>
   </div>
 </section>
 
-<section id="what-we-built">
+<section id="what-we-built" class="reveal">
   <div class="wrap">
     <h2>What we built</h2>
     <p>Pathfinder is Pod Iota's rebuild on our ad decisioning platform: a faster ad delivery and templating layer designed to cut script weight, reduce layout shift, and improve discoverability, without giving up ad revenue. The build is roughly 90% complete.</p>
   </div>
 </section>
 
-<section id="evidence">
+<section id="evidence" class="reveal">
   <div class="wrap">
     <h2>The evidence we have today</h2>
     <p>We measured a live staging simulation against production using the browser's own Performance API: navigation timing, paint timing, and resource timing. In that lab snapshot, First Contentful Paint came in faster on the staging build. This is a single lab snapshot, not a field dataset drawn from real visitors. It shows direction, not proof.</p>
     <figure>
       <img src="assets/chart2.png" alt="Load time comparison: production cold load, production warm cache, and Pathfinder staging build">
-      <figcaption>Page weight: the Pathfinder staging build loads about 81 KB (kilobytes). The current production homepage loads about 871 KB &mdash; roughly 11x heavier.</figcaption>
+      <figcaption>Page weight: the Pathfinder staging build loads about 81 KB (kilobytes). The current production homepage loads about 871 KB &mdash; roughly 11x heavier.<br>
+      <span class="updated">Snapshot taken 2026-11-16. This one is a manual, dated lab comparison, not an automated daily refresh &mdash; the staging environment is internal-only and isn't reachable from a public build job.</span></figcaption>
     </figure>
   </div>
 </section>
 
-<section id="how-close">
+<section id="how-close" class="reveal">
   <div class="wrap">
     <h2>How close we are</h2>
     <p>Validation is roughly 90% complete against our readiness checklist: 2 of 5 items done, 2 in progress, and 1 blocked. We're not waiting on belief, we're waiting on the remaining checks.</p>
@@ -71,7 +91,7 @@
   </div>
 </section>
 
-<section id="payoff">
+<section id="payoff" class="reveal">
   <div class="wrap">
     <h2>The case for the payoff</h2>
     <p>Publishers who have made comparable ad-tech and speed investments have seen real gains, from case studies at Netzwelt, Economic Times, NDTV, iCook, and Vodafone to Google's own research linking page speed to revenue. The pattern points one direction. We're not claiming those exact numbers for Pathfinder yet, but the direction is why this investment makes sense.</p>
@@ -81,7 +101,7 @@
     </figure>
     <div class="callout">
       <div class="eyebrow">Case study</div>
-      <p style="font-size:2.2rem; font-weight:700; color:var(--good); margin:0 0 6px; font-family:Georgia,serif;">+18%</p>
+      <p style="font-size:2.2rem; font-weight:700; color:var(--good); margin:0 0 6px; font-family:Georgia,serif;"><span class="countup" data-target="18" data-prefix="+">0</span>%</p>
       <p style="font-weight:600; color:var(--ink); margin:0 0 10px;">ad revenue</p>
       <p style="margin-bottom:6px;">Netzwelt, after passing Core Web Vitals thresholds.</p>
       <p style="margin-bottom:6px;">One of several publishers in our review that saw real gains post-launch.</p>
@@ -90,7 +110,7 @@
   </div>
 </section>
 
-<section id="not-claiming">
+<section id="not-claiming" class="reveal">
   <div class="wrap">
     <h2>What we're not claiming</h2>
     <div class="not-claiming">
@@ -102,9 +122,85 @@
 <footer class="closer">
   <div class="wrap">
     <p class="ask">Testing is underway. The numbers are in. Just say when.</p>
-    <p>Built by Pod Iota for Pathfinder.</p>
+    <p>Built by Pod Iota for Pathfinder. The baseline and cost-of-slow charts above refresh daily from live data; see <a href="https://github.com/csmithers-mcc/pathfinder-numbers/blob/main/SETUP.md">SETUP.md</a> for how.</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // Scroll-reveal: fade/slide each section in once it enters the viewport.
+  var revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && revealEls.length) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("visible"); });
+  }
+
+  // Count-up: animate any [data-target] number once it's visible.
+  var countEls = document.querySelectorAll(".countup");
+  function animateCount(el) {
+    var target = parseFloat(el.getAttribute("data-target"));
+    var prefix = el.getAttribute("data-prefix") || "";
+    if (isNaN(target)) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      el.textContent = prefix + target;
+      return;
+    }
+    var duration = 900;
+    var start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = prefix + Math.round(eased * target);
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ("IntersectionObserver" in window && countEls.length) {
+    var countObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    countEls.forEach(function (el) { countObserver.observe(el); });
+  } else {
+    countEls.forEach(animateCount);
+  }
+
+  // Sticky nav: highlight the section currently in view.
+  var navLinks = document.querySelectorAll(".sitenav a");
+  var sections = Array.prototype.map.call(navLinks, function (a) {
+    return document.getElementById(a.getAttribute("href").slice(1));
+  }).filter(Boolean);
+  if ("IntersectionObserver" in window && sections.length) {
+    var navObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var link = document.querySelector('.sitenav a[href="#' + entry.target.id + '"]');
+        if (!link) return;
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (a) { a.classList.remove("active"); });
+          link.classList.add("active");
+        }
+      });
+    }, { rootMargin: "-45% 0px -45% 0px" });
+    sections.forEach(function (s) { navObserver.observe(s); });
+  }
+})();
+</script>
 
 </body>
 </html>

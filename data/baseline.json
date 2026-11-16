@@ -1,0 +1,7 @@
+{
+  "LCP": {"value": 2628, "status": "Needs improvement", "unit": "ms"},
+  "INP": {"value": 329, "status": "Needs improvement", "unit": "ms"},
+  "FCP": {"value": 2072, "status": "Needs improvement", "unit": "ms"},
+  "TTFB": {"value": 1010, "status": "Needs improvement", "unit": "ms"},
+  "CLS": {"value": 0.097, "status": "Good", "unit": ""}
+}
