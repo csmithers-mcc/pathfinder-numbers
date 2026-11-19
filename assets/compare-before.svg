@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 660" width="100%" role="img" aria-label="Illustrative wireframe of today's homepage layout, structure only, no real content">
+<rect x="0" y="0" width="440" height="660" fill="#ffffff"/>
+<rect x="0" y="0" width="440" height="660" fill="none" stroke="#d8d3c4" stroke-width="2"/>
+<!-- masthead -->
+<text x="220" y="34" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#1a1d1f" text-anchor="middle">Your Publication</text>
+<line x1="20" y1="48" x2="420" y2="48" stroke="#d8d3c4" stroke-width="1.5"/>
+<!-- nav -->
+<g font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#52585e">
+ <text x="40" y="68">News</text>
+ <text x="90" y="68">Sports</text>
+ <text x="145" y="68">Business</text>
+ <text x="205" y="68">More</text>
+</g>
+<line x1="20" y1="78" x2="420" y2="78" stroke="#d8d3c4" stroke-width="1"/>
+<!-- big ad slot -->
+<rect x="20" y="96" width="400" height="130" fill="#f2e1d4" stroke="#c4471c" stroke-dasharray="4,3"/>
+<text x="220" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c4471c" text-anchor="middle">AD</text>
+<!-- hero article -->
+<rect x="20" y="242" width="400" height="140" fill="#e8e5db"/>
+<rect x="20" y="394" width="260" height="10" fill="#1a1d1f"/>
+<rect x="20" y="410" width="200" height="10" fill="#1a1d1f"/>
+<rect x="20" y="430" width="340" height="7" fill="#a7aeb6"/>
+<!-- latest row -->
+<line x1="20" y1="460" x2="420" y2="460" stroke="#d8d3c4" stroke-width="1"/>
+<text x="20" y="480" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#52585e">LATEST</text>
+<g>
+ <rect x="20" y="492" width="120" height="70" fill="#e8e5db"/>
+ <rect x="20" y="568" width="110" height="7" fill="#a7aeb6"/>
+ <rect x="160" y="492" width="120" height="70" fill="#e8e5db"/>
+ <rect x="160" y="568" width="110" height="7" fill="#a7aeb6"/>
+ <rect x="300" y="492" width="120" height="70" fill="#e8e5db"/>
+ <rect x="300" y="568" width="110" height="7" fill="#a7aeb6"/>
+</g>
+<text x="20" y="625" font-family="Helvetica, Arial, sans-serif" font-size="10" font-style="italic" fill="#a7aeb6">Today's layout, for reference &#8212; see the annotated version to the right.</text>
+</svg>

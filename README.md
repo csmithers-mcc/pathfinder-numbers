@@ -10,13 +10,14 @@ A single-page case study for **Pathfinder**, a Core Web Vitals rebuild project: 
 
 This page is deliberately *not* a victory lap. It lays out, in order:
 
-1. **The problem** &mdash; why page speed matters for ad revenue, SEO, and Core Web Vitals together, with a real "share of views past 3 seconds" stat.
-2. **The baseline** &mdash; current production Core Web Vitals (LCP, INP, FCP, TTFB, CLS), measured against Google's published thresholds.
-3. **What we built** &mdash; a plain-language description of the rebuild itself.
-4. **The evidence** &mdash; a one-time lab comparison of page weight and load timing between the staging build and production.
-5. **How close we are** &mdash; an honest, itemized readiness checklist (by role, not by name).
-6. **The case for the payoff** &mdash; publicly documented case studies from other publishers who've made similar investments, used to argue direction, not to promise an exact number for this project.
-7. **What we're not claiming** &mdash; a plain statement of the gap between "built" and "proven."
+1. **Same site, same everything?** &mdash; illustrative wireframes (no real content) comparing today's layout to Pathfinder's, to show what structurally changed under a near-identical surface.
+2. **The problem** &mdash; why page speed matters for ad revenue, SEO, and Core Web Vitals together, with a real "share of views past 3 seconds" stat.
+3. **The baseline** &mdash; current production Core Web Vitals (LCP, INP, FCP, TTFB, CLS), measured against Google's published thresholds.
+4. **What we built** &mdash; a plain-language description of the rebuild itself.
+5. **The evidence** &mdash; a one-time lab comparison of page weight and load timing between the staging build and production.
+6. **How close we are** &mdash; an honest, itemized readiness checklist (by role, not by name).
+7. **The case for the payoff** &mdash; publicly documented case studies from other publishers who've made similar investments, used to argue direction, not to promise an exact number for this project.
+8. **What we're not claiming** &mdash; a plain statement of the gap between "built" and "proven."
 
 ## Repo structure
 
@@ -27,6 +28,8 @@ This page is deliberately *not* a victory lap. It lays out, in order:
 ├── README.md                    # This file
 ├── SETUP.md                     # How the daily data refresh is wired up
 ├── assets/
+│   ├── compare-before.svg / .png # Wireframe of today's layout (illustrative, no real content)
+│   ├── compare-after.svg / .png # Wireframe of the Pathfinder layout (illustrative, no real content)
 │   ├── chart1.svg / .png        # Baseline Core Web Vitals (auto-refreshed daily)
 │   ├── chart2.svg / .png        # Staging vs. production lab comparison (manual, dated snapshot)
 │   ├── chart3.svg / .png        # Industry case studies (fixed external citations)

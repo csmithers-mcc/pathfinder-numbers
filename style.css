@@ -98,13 +98,6 @@ nav.sitenav a.active {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 
-/* Chart images keep their authored light background even in dark mode,
-   framed so they don't look like a rendering bug. */
-figure img {
-  background: var(--chart-frame);
-  padding: 8px;
-}
-
 .wrap {
   max-width: 760px;
   margin: 0 auto;
@@ -174,6 +167,8 @@ figure img {
   display: block;
   border-radius: 6px;
   border: 1px solid var(--rule);
+  background: var(--chart-frame);
+  padding: 8px;
 }
 
 figcaption {
@@ -181,6 +176,42 @@ figcaption {
   color: var(--ink-soft);
   margin-top: 10px;
   line-height: 1.5;
+}
+
+.compare-grid {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.compare-grid figure {
+  flex: 1 1 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.compare-grid figcaption {
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-top: 8px;
+}
+
+.compare-vs {
+  flex: 0 0 auto;
+  font-size: 1.4rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 600px) {
+  .compare-grid {
+    flex-direction: column;
+  }
+  .compare-vs {
+    transform: rotate(90deg);
+  }
 }
 
 figcaption a {
