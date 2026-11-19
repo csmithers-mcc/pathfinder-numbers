@@ -10,43 +10,43 @@
  <g transform="translate(0,30)">
  <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">LCP</text>
  <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
- <rect x="90" y="2" width="326" height="20" fill="#b4791c"/>
+ <rect x="90" y="2" width="319" height="20" fill="#b4791c"/>
  <line x1="400" y1="-4" x2="400" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
- <text x="90" y="40" font-size="11" fill="#52585e">2628ms avg</text>
+ <text x="90" y="40" font-size="11" fill="#52585e">2569ms avg</text>
  <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600">Needs improvement</text>
  </g>
  <g transform="translate(0,85)">
  <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">INP</text>
  <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
- <rect x="90" y="2" width="291" height="20" fill="#b4791c"/>
+ <rect x="90" y="2" width="275" height="20" fill="#b4791c"/>
  <line x1="267" y1="-4" x2="267" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
- <text x="90" y="40" font-size="11" fill="#52585e">329ms avg</text>
+ <text x="90" y="40" font-size="11" fill="#52585e">311ms avg</text>
  <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600">Needs improvement</text>
  </g>
  <g transform="translate(0,140)">
  <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">FCP</text>
  <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
- <rect x="90" y="2" width="338" height="20" fill="#b4791c"/>
+ <rect x="90" y="2" width="332" height="20" fill="#b4791c"/>
  <line x1="384" y1="-4" x2="384" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
- <text x="90" y="40" font-size="11" fill="#52585e">2072ms avg</text>
+ <text x="90" y="40" font-size="11" fill="#52585e">2037ms avg</text>
  <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600">Needs improvement</text>
  </g>
  <g transform="translate(0,195)">
  <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">TTFB</text>
  <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
- <rect x="90" y="2" width="285" height="20" fill="#b4791c"/>
+ <rect x="90" y="2" width="283" height="20" fill="#b4791c"/>
  <line x1="315" y1="-4" x2="315" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
- <text x="90" y="40" font-size="11" fill="#52585e">1010ms avg</text>
+ <text x="90" y="40" font-size="11" fill="#52585e">1003ms avg</text>
  <text x="700" y="16" font-size="11" fill="#b4791c" font-weight="600">Needs improvement</text>
  </g>
  <g transform="translate(0,250)">
  <text x="0" y="16" fill="#1a1d1f" font-size="13" font-weight="600">CLS</text>
  <rect x="90" y="2" width="620" height="20" fill="#d8d3c4"/>
- <rect x="90" y="2" width="200" height="20" fill="#1f6f4e"/>
+ <rect x="90" y="2" width="198" height="20" fill="#1f6f4e"/>
  <line x1="297" y1="-4" x2="297" y2="28" stroke="#1a1d1f" stroke-dasharray="2,2"/>
- <text x="90" y="40" font-size="11" fill="#52585e">0.097 avg (scale 0-0.3)</text>
+ <text x="90" y="40" font-size="11" fill="#52585e">0.096 avg (scale 0-0.3)</text>
  <text x="700" y="16" font-size="11" fill="#1f6f4e" font-weight="600">Good</text>
  </g>
- <text x="0" y="330" font-size="10" fill="#52585e">Data as of 2026-11-16 &#8226; refreshed daily</text>
+ <text x="0" y="330" font-size="10" fill="#52585e">Data as of 2026-11-19 &#8226; refreshed daily</text>
 </g>
 </svg>

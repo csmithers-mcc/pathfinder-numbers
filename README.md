@@ -61,6 +61,7 @@ This repo and site are public, so the content here has been deliberately written
 - No internal vendor, tool, or platform names &mdash; described generically (e.g., "our ad decisioning platform").
 - No internal URLs &mdash; no staging domain, no live internal analytics dashboard links, no Confluence/Docs links. Citations to genuinely public sources (web.dev, Think with Google, other publishers' public case studies) are kept and linked.
 - No individual names &mdash; readiness items are attributed to roles, not people.
+- No real screenshots of the unreleased staging design &mdash; the "same site" comparison uses illustrative wireframes instead, since the real staging build mirrors live editorial content (real photos, real headlines) that can't be reproduced here.
 
 If you're extending this page, keep that bar: round the number, name the role, cite the public source, and skip the rest.
 

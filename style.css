@@ -178,6 +178,13 @@ figcaption {
   line-height: 1.5;
 }
 
+figcaption a {
+  color: var(--ink-soft);
+  text-decoration: underline;
+}
+
+figcaption a:hover { color: var(--accent); }
+
 .compare-grid {
   display: flex;
   align-items: center;
@@ -213,13 +220,6 @@ figcaption {
     transform: rotate(90deg);
   }
 }
-
-figcaption a {
-  color: var(--ink-soft);
-  text-decoration: underline;
-}
-
-figcaption a:hover { color: var(--accent); }
 
 ul.checklist {
   list-style: none;

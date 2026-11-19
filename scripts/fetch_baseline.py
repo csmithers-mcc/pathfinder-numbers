@@ -3,8 +3,9 @@
 Pulls the current Core Web Vitals baseline averages from a saved Amplitude
 chart and writes them to data/baseline.json.
 
-ASSUMPTIONS TO VERIFY (I could not test this against the live Amplitude
-account from here -- verify these before trusting the automated output):
+ASSUMPTIONS TO VERIFY (confirmed against the live project's internal API on
+2026-11-19 via the Amplitude MCP connector -- the public REST API v3 response
+envelope has NOT been separately confirmed and may differ slightly):
   * AMPLITUDE_CWV_CHART_ID points at the "Performance Marks (web vitals)"
     saved chart (default below is the chart id found during setup:
     https://app.amplitude.com/analytics/mcclatchy/chart/poj9t22s).
@@ -12,9 +13,9 @@ account from here -- verify these before trusting the automated output):
     "chart query" endpoint: GET /api/3/chart/{id}/query
     https://amplitude.com/docs/apis/analytics/dashboard-rest
   * The chart's series/group labels contain the metric names LCP, INP, FCP,
-    TTFB, CLS (case-insensitive substring match, see METRIC_KEYS below). If
-    Amplitude renamed or re-grouped the series, update METRIC_KEYS or the
-    parsing logic in `extract_metric_averages`.
+    TTFB, CLS (case-insensitive substring match, see METRIC_KEYS below) --
+    confirmed live: the chart's seriesNames come back as exactly
+    ["CLS", "FCP", "INP", "LCP", "TTFB"].
 
 This script fails loudly (non-zero exit) rather than writing partial or
 guessed data if anything looks off -- a public site should never publish a
@@ -23,6 +24,7 @@ silently-wrong number.
 import json
 import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -109,7 +111,7 @@ def main():
     payload = fetch_chart_data(CHART_ID)
     averages = extract_metric_averages(payload)
 
-    out = {}
+    out = {"as_of": datetime.now(timezone.utc).strftime("%Y-%m-%d")}
     for metric, value in averages.items():
         rounded = round(value, 3) if metric == "CLS" else round(value)
         out[metric] = {

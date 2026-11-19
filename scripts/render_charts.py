@@ -139,7 +139,12 @@ def main():
 
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 
-    chart1_svg = render_baseline_svg(baseline, as_of=cost.get("as_of", ""))
+    # baseline.json carries its own as_of (the day it was last successfully
+    # pulled), which may be fresher than cost_of_slow.json's -- use it for
+    # chart1 so the "as of" date on the baseline chart never claims to be
+    # more current than the cost-of-slow chart if only one of the two pulls
+    # has actually run.
+    chart1_svg = render_baseline_svg(baseline, as_of=baseline.get("as_of") or cost.get("as_of", ""))
     chart5_svg = render_cost_of_slow_svg(cost)
 
     (ASSETS_DIR / "chart1.svg").write_text(chart1_svg)
